@@ -1,4 +1,4 @@
-import project1 from "../assets/projects/P2_Logo_Booki.jpg";
+import project1 from "../assets/projects/P2_Logo_Booki.png";
 import project2 from "../assets/projects/P4_Logo_ninacarducci.png";
 import project3 from "../assets/projects/P5_Logo_kasa.png";
 import project4 from "../assets/projects/P6_Logo_monvieuxgrimoire.png";
