@@ -12,13 +12,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        run: git clone https://github.com/SilentCraftsman/OC.P8.git
 
       - name: Setup Node
-        uses: actions/setup-node@v3
-
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm install
 
       - name: Build project
         run: npm run build
@@ -29,21 +26,24 @@ jobs:
           name: production-files
           path: ./dist
 
-    deploy:
-      name: Deploy
-      needs: build
-      runs-on: ubuntu-latest
-      if: github.ref == 'refs/heads/master'
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
 
-      steps:
-        - name: Download artifact
-          uses: actions/download-artifact@v3
-          with:
-            name: production-files
-            path: ./dist
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: production-files
+          path: ./dist
 
-        - name: Deploy to GitHub Pages
-          uses: peaceiris/actions-gh-pages@v3
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./dist
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.email "ggambier72@gmail.com"
+          git config --global user.name "SilentCraftsman"
+          git init
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+          git push --force --quiet "https://${{ secrets.GITHUB_TOKEN }}@github.com/SilentCraftsman/OC.P8.git" master:gh-pages
