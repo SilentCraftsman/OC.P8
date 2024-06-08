@@ -1,20 +1,24 @@
 import Logo from "../assets/Logo.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaTwitterSquare,
+  FaInstagram,
+} from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="mb-20 flex items-center justify-between py-6">
-      <div className="flex flex-shrink-0 items-center">
-        <img src={Logo} alt="Logo" style={{ width: "200px", height: "55px" }} />
+    <nav className="mb-8 md:mb-20 flex items-center justify-between py-4 md:py-6">
+      <div className="flex-shrink-0 items-center">
+        <img src={Logo} alt="Logo" className="w-24 md:w-32" />
       </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
-        <FaSquareXTwitter />
-        <FaInstagram />
+      <div className="flex m-4 items-center justify-center md:justify-end gap-4 text-xl">
+        <div className="gap-2 flex">
+          <FaLinkedin />
+          <FaGithub />
+          <FaTwitterSquare />
+          <FaInstagram />
+        </div>
       </div>
     </nav>
   );
