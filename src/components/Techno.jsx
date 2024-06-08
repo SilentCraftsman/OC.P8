@@ -19,62 +19,44 @@ const iconVariants = (duration) => ({
   },
 });
 
+const Icon = ({ IconComponent, duration }) => (
+  <motion.div
+    variants={iconVariants(duration)}
+    initial="initial"
+    animate="animate"
+    className="rounded-2xl border-4 border-neutral-800 p-4">
+    <IconComponent className="text-7xl text-white-800 border-4 border-purple-200 rounded-2xl" />
+  </motion.div>
+);
+
 const Techno = () => {
-  const iconStyles =
-    "text-7xl text-white-800 border-4 border-purple-200 rounded-2xl";
+  const icons = [
+    { component: RiReactjsLine, duration: 2.5 },
+    { component: TbBrandNextjs, duration: 3 },
+    { component: SiMongodb, duration: 3.5 },
+    { component: DiRedis, duration: 4 },
+    { component: FaNodeJs, duration: 5 },
+    { component: BiLogoPostgresql, duration: 6 },
+  ];
 
   return (
     <div className="border-b border-neutral-800 pb-24">
-      <h1 className="my-20 text-center text-4xl">Technologies</h1>
+      <motion.h1
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -20 }}
+        transition={{ duration: 1.5 }}
+        className="my-20 text-center text-4xl">
+        Technologies
+      </motion.h1>
       <div className="flex justify-center">
         <div className="flex items-center gap-4">
-          <motion.div
-            variants={iconVariants(2.5)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <RiReactjsLine className={iconStyles} />
-          </motion.div>
-
-          <motion.div
-            variants={iconVariants(3)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <TbBrandNextjs className={iconStyles} />
-          </motion.div>
-
-          <motion.div
-            variants={iconVariants(3.5)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiMongodb className={iconStyles} />
-          </motion.div>
-
-          <motion.div
-            variants={iconVariants(4)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <DiRedis className={iconStyles} />
-          </motion.div>
-
-          <motion.div
-            variants={iconVariants(5)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaNodeJs className={iconStyles} />
-          </motion.div>
-
-          <motion.div
-            variants={iconVariants(6)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <BiLogoPostgresql className={iconStyles} />
-          </motion.div>
+          {icons.map((icon, index) => (
+            <Icon
+              key={index}
+              IconComponent={icon.component}
+              duration={icon.duration}
+            />
+          ))}
         </div>
       </div>
     </div>
