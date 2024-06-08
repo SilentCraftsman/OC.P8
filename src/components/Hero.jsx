@@ -4,10 +4,11 @@ import profilePic from "../assets/Photo_profil_OC.png";
 import { motion, useAnimation } from "framer-motion";
 
 const animationVariants = (delay) => ({
-  hidden: { x: -100, opacity: 0 },
+  hidden: { x: -100, opacity: 0, willChange: "transform, opacity" },
   visible: {
     x: 0,
     opacity: 1,
+    willChange: "transform, opacity",
     transition: { duration: 1, delay: delay, ease: "easeInOut" },
   },
 });
@@ -17,18 +18,25 @@ const Hero = () => {
   const imgControls = useAnimation();
 
   useEffect(() => {
+    controls.start("visible");
+    imgControls.start({
+      x: 0,
+      opacity: 1,
+      willChange: "transform, opacity",
+      transition: { duration: 1.2, delay: 1.5, ease: "easeInOut" },
+    });
+
     const handleResize = () => {
       controls.start("visible");
       imgControls.start({
         x: 0,
         opacity: 1,
+        willChange: "transform, opacity",
         transition: { duration: 1.2, delay: 1.5, ease: "easeInOut" },
       });
     };
 
-    handleResize(); // Trigger the animation on mount
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -64,9 +72,8 @@ const Hero = () => {
         </div>
         <div className="w-full lg:w-1/2 lg:p-6 flex justify-center">
           <motion.img
-            initial={{ x: 100, opacity: 0 }}
+            initial={{ x: 100, opacity: 0, willChange: "transform, opacity" }}
             animate={imgControls}
-            transition={{ duration: 1.2, delay: 1.5, ease: "easeInOut" }}
             src={profilePic}
             alt="John Doe"
             className="h-auto max-h-96"
