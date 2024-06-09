@@ -33,32 +33,42 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title:
+      "Booki - Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Dans ce projet, j'ai créé la page d'accueil d'une agence de voyage en utilisant HTML et CSS, en intégrant une interface responsive basée sur des maquettes Figma pour mobile, tablette et desktop. L'objectif était de comprendre la structuration et le stylisme du code pour développer des compétences en design responsive, cruciales dans le développement web moderne. Cela me prépare à une carrière de développeur front-end compétent.",
+    technologies: ["HTML", "CSS"],
   },
   {
-    title: "Task Management App",
+    title: "Nina Carducci - Débuggez et optimisez un site de photographe",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "L'objectif de ce projet est d'optimisé le référencement d'un site en améliorant sa performance et son accessibilité. J'ai identifié les problèmes avec des outils comme Lighthouse et Wave, puis j'ai apporté des modifications au code pour améliorer les performances et l'accessibilité. Enfin, j'ai créé un rapport montrant l'impact de ces changements. Ces compétences sont essentielles pour augmenter la visibilité et le trafic du site, ainsi que pour améliorer l'expérience utilisateur.",
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
-    title: "Portfolio Website",
+    title:
+      "Kasa - Créez une application web de location immobilière avec React",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Ce projet me permet de développer le front-end d'une application avec React et React Router pour une expérience utilisateur moderne. En utilisant des maquettes fournies, je configure la navigation entre les pages avec React Router. Ces compétences sont essentielles pour créer des applications web réactives et attractives, répondant à la demande croissante dans l'industrie du développement web.",
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Sass"],
   },
   {
-    title: "Blogging Platform",
+    title:
+      "Mon Vieux Grimoire - Développez le back-end d'un site de notation de livres",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Pour ce projet, mon travail consiste à créer le back-end d'un site de notation de livres avec Express et MongoDB. Je mets en place les opérations CRUD, un système d'authentification et des fonctionnalités de notation. Ces compétences en développement back-end sont cruciales pour des applications performantes et me préparent à travailler sur des projets full-stack complexes.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
   },
 ];
 
