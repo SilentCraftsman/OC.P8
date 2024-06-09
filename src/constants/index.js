@@ -73,7 +73,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "122 rue du Pinel, 62218 Lens",
+  phoneNo: "06 72 17 57 89",
+  email: "giovanni_gambier@gmail.com",
 };
