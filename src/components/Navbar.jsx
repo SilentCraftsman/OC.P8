@@ -14,10 +14,34 @@ const Navbar = () => {
       </div>
       <div className="flex m-4 items-center justify-center md:justify-end gap-4 text-xl">
         <div className="gap-2 flex">
-          <FaLinkedin />
-          <FaGithub />
-          <FaTwitterSquare />
-          <FaInstagram />
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-inherit">
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-inherit">
+            <FaGithub />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-inherit">
+            <FaTwitterSquare />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-inherit">
+            <FaInstagram />
+          </a>
         </div>
       </div>
     </nav>
