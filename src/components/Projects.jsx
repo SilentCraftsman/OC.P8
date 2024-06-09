@@ -13,14 +13,14 @@ const ProjectItem = ({ project }) => (
         height={150}
         alt={project.title}
         className="mb-6 rounded"
-        initial={{ opacity: 0, x: -50 }}
+        initial={{ opacity: 0, x: -150 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
       />
     </div>
     <motion.div
       className="w-full max-w-xl lg:w-3/4"
-      initial={{ opacity: 0, x: 50 }}
+      initial={{ opacity: 0, x: 150 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}>
       <h6 className="mb-2 font-semibold">{project.title}</h6>
