@@ -39,6 +39,7 @@ export const PROJECTS = [
     description:
       "Dans ce projet, j'ai créé la page d'accueil d'une agence de voyage en utilisant HTML et CSS, en intégrant une interface responsive basée sur des maquettes Figma pour mobile, tablette et desktop. L'objectif était de comprendre la structuration et le stylisme du code pour développer des compétences en design responsive, cruciales dans le développement web moderne. Cela me prépare à une carrière de développeur front-end compétent.",
     technologies: ["HTML", "CSS"],
+    githubUrl: "https://github.com/SilentCraftsman/OC.P2",
   },
   {
     title: "Nina Carducci - Débuggez et optimisez un site de photographe",
@@ -46,6 +47,7 @@ export const PROJECTS = [
     description:
       "L'objectif de ce projet est d'optimisé le référencement d'un site en améliorant sa performance et son accessibilité. J'ai identifié les problèmes avec des outils comme Lighthouse et Wave, puis j'ai apporté des modifications au code pour améliorer les performances et l'accessibilité. Enfin, j'ai créé un rapport montrant l'impact de ces changements. Ces compétences sont essentielles pour augmenter la visibilité et le trafic du site, ainsi que pour améliorer l'expérience utilisateur.",
     technologies: ["HTML", "CSS", "JavaScript"],
+    githubUrl: "https://github.com/SilentCraftsman/OC.P4",
   },
   {
     title:
@@ -54,6 +56,7 @@ export const PROJECTS = [
     description:
       "Ce projet me permet de développer le front-end d'une application avec React et React Router pour une expérience utilisateur moderne. En utilisant des maquettes fournies, je configure la navigation entre les pages avec React Router. Ces compétences sont essentielles pour créer des applications web réactives et attractives, répondant à la demande croissante dans l'industrie du développement web.",
     technologies: ["HTML", "CSS", "JavaScript", "React", "Sass"],
+    githubUrl: "https://github.com/SilentCraftsman/OC.P5",
   },
   {
     title:
@@ -69,6 +72,7 @@ export const PROJECTS = [
       "Express",
       "MongoDB",
     ],
+    githubUrl: "https://github.com/SilentCraftsman/OC.P6",
   },
 ];
 

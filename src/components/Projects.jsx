@@ -2,10 +2,13 @@ import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
 const ProjectItem = ({ project }) => (
-  <motion.div
+  <motion.a
+    href={project.githubUrl}
+    target="_blank"
+    rel="noopener noreferrer"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
-    className="mb-8 flex flex-wrap lg:justify-center">
+    className="mb-8 flex flex-wrap lg:justify-center no-underline">
     <div className="w-full lg:w-1/4">
       <motion.img
         src={project.image}
@@ -35,7 +38,7 @@ const ProjectItem = ({ project }) => (
         ))}
       </div>
     </motion.div>
-  </motion.div>
+  </motion.a>
 );
 
 const Projects = () => (
