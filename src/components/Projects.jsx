@@ -29,7 +29,7 @@ const ProjectItem = ({ project }) => (
         {project.technologies.map((tech, index) => (
           <span
             key={index}
-            className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">
+            className="mb-2 mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">
             {tech}
           </span>
         ))}
@@ -45,7 +45,7 @@ const Projects = () => (
       initial={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5 }}
       className="my-20 text-center text-4xl">
-      Projects
+      Projets
     </motion.h2>
     <div>
       {PROJECTS.map((project, index) => (
