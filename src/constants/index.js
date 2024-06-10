@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/P2_Logo_Booki.png";
-import project2 from "../assets/projects/P4_Logo_ninacarducci.png";
-import project3 from "../assets/projects/P5_Logo_kasa.png";
-import project4 from "../assets/projects/P6_Logo_monvieuxgrimoire.png";
+import project1 from "../assets/projects/P2_Logo_Booki.webp";
+import project2 from "../assets/projects/P4_Logo_ninacarducci.webp";
+import project3 from "../assets/projects/P5_Logo_kasa.webp";
+import project4 from "../assets/projects/P6_Logo_monvieuxgrimoire.webp";
 
 export const HERO_CONTENT = `Salut !
 Je crée des sites web dynamiques et performants. Du front-end (HTML, CSS, JavaScript, React) au back-end (NodeJS, Express, MongoDB), je m'assure que vos sites sont réactifs, robustes et optimisés pour le SEO. Découvrez mon portfolio et contactez-moi pour discuter de votre prochaine aventure digitale !
