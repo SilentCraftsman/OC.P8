@@ -8,28 +8,31 @@ const ProjectItem = ({ project }) => (
     rel="noopener noreferrer"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
-    className="mb-8 flex flex-wrap lg:justify-center no-underline">
-    <div className="w-full lg:w-1/4">
+    className="mb-8 flex flex-wrap lg:justify-center no-underline"
+    initial={{ opacity: 0, x: 100 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.5 }}>
+    <div className="w-full lg:w-1/4 flex justify-center lg:justify-start">
       <motion.img
         src={project.image}
-        width={280}
-        height={200}
         alt={project.title}
-        className="mb-6 rounded"
+        className="mb-6 rounded w-full max-w-xs lg:max-w-full"
         initial={{ opacity: 0, x: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       />
     </div>
     <motion.div
-      className="w-full max-w-xl lg:w-3/4"
-      initial={{ opacity: 0, x: 0 }}
-      whileInView={{ opacity: 1 }}
+      className="w-full max-w-xl lg:w-3/4 flex flex-col items-center lg:items-start"
+      initial={{ opacity: 0, x: 20 }}
+      whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
       style={{ marginLeft: "30px" }}>
       <h6 className="mb-2 font-semibold">{project.title}</h6>
-      <p className="mb-4 text-neutral-400">{project.description}</p>
-      <div className="flex flex-wrap">
+      <p className="mb-4 text-neutral-400 text-center lg:text-left">
+        {project.description}
+      </p>
+      <div className="flex flex-wrap justify-center lg:justify-start">
         {project.technologies.map((tech, index) => (
           <span
             key={index}
