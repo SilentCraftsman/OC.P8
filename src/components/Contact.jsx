@@ -19,7 +19,7 @@ const Contact = () => {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.2, delay: 0.1 }}
+          transition={{ duration: 0.2, delay: 0.5 }}
           className="my-4">
           {CONTACT.address}
         </motion.p>
@@ -33,7 +33,7 @@ const Contact = () => {
         <motion.a
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.2, delay: 1.5 }}
+          transition={{ duration: 0.2, delay: 1.7 }}
           href="#"
           className="border-b my-4 inline-block">
           {CONTACT.email}

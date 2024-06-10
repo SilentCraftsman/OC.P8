@@ -12,8 +12,8 @@ const ProjectItem = ({ project }) => (
     <div className="w-full lg:w-1/4">
       <motion.img
         src={project.image}
-        width={150}
-        height={150}
+        width={280}
+        height={200}
         alt={project.title}
         className="mb-6 rounded"
         initial={{ opacity: 0, x: 0 }}
