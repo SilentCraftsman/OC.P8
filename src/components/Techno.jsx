@@ -4,7 +4,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
-import { FaNode } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -43,12 +43,10 @@ const getIconColor = (IconComponent) => {
     return "#E34F26"; // Couleur associée à HTML5
   } else if (IconComponent === FaCss3Alt) {
     return "#1572B6"; // Couleur associée à CSS3
-  } else if (
-    IconComponent === TbBrandJavascript ||
-    IconComponent === FaReact ||
-    IconComponent === FaNode
-  ) {
-    return "#F7DF1E"; // Couleur associée à JavaScript, React et Node.js
+  } else if (IconComponent === TbBrandJavascript || IconComponent === FaReact) {
+    return "#F7DF1E"; // Couleur associée à JavaScript, React
+  } else if (IconComponent === FaNodeJs) {
+    return "#000000"; // Couleur associée à Node.js
   } else if (IconComponent === SiMongodb) {
     return "#47A248"; // Couleur associée à MongoDB
   } else {
@@ -63,7 +61,7 @@ const getBackgroundColor = (IconComponent) => {
     IconComponent === FaCss3Alt ||
     IconComponent === TbBrandJavascript ||
     IconComponent === FaReact ||
-    IconComponent === FaNode ||
+    IconComponent === FaNodeJs ||
     IconComponent === SiMongodb
   ) {
     return "#ffffff";
@@ -80,7 +78,7 @@ const Techno = () => {
     { component: TbBrandJavascript, duration: 4 },
     { component: FaReact, duration: 5 },
     { component: SiMongodb, duration: 6 },
-    { component: FaNode, duration: 7 },
+    { component: FaNodeJs, duration: 7 },
   ];
 
   return (
