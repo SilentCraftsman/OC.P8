@@ -12,7 +12,7 @@ const ProjectItem = ({ project }) => (
       <motion.img
         src={project.image}
         alt={project.title}
-        className="mb-6 rounded w-full max-w-xs lg:max-w-full"
+        className="mb-6 rounded w-full max-w-xs lg:max-w-full object-contain h-32"
         initial={{ opacity: 0, x: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
