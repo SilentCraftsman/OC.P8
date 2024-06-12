@@ -1,13 +1,9 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectItem = ({ project }) => (
-  <motion.a
-    href={project.githubUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
+  <motion.div
     className="mb-8 flex flex-wrap lg:justify-center no-underline"
     initial={{ opacity: 0, x: 100 }}
     whileInView={{ opacity: 1, x: 0 }}
@@ -41,8 +37,20 @@ const ProjectItem = ({ project }) => (
           </span>
         ))}
       </div>
+      <motion.div
+        className="flex items-center mt-4"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}>
+        <FaGithub size={45} className="mr-2 text-white-900" />
+        <a
+          href={project.githubUrl}
+          rel="noopener noreferrer"
+          className="text-grey-900">
+          Si vous voulez voir le repository associé à ce projet, cliquez ici !
+        </a>
+      </motion.div>
     </motion.div>
-  </motion.a>
+  </motion.div>
 );
 
 const Projects = () => (
