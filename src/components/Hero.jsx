@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/Photo_profil_OC.png";
+import profilePic from "../assets/photo_profil.webp";
 import { motion, useAnimation } from "framer-motion";
 
 const animationVariants = (delay) => ({
