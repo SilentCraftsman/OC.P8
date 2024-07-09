@@ -78,7 +78,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "122 rue du Pinel, 62218 Lens",
-  phoneNo: "06 72 17 57 89",
-  email: "giovanni_gambier@gmail.com",
+  address: "Appartement 3 - 595 avenue de la Morinie, 62232 Annezin",
+  phoneNo: "07 61 55 30 72",
+  email: "ggambier72@gmail.com",
 };
