@@ -75,7 +75,7 @@ const Hero = () => {
             initial={{ x: 100, opacity: 0, willChange: "transform, opacity" }}
             animate={imgControls}
             src={profilePic}
-            alt="John Doe"
+            alt="Giovanni Gambier"
             className="h-auto max-h-96"
           />
         </div>

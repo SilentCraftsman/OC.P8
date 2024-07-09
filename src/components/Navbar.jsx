@@ -1,4 +1,4 @@
-//import Logo from "../assets/Logo.webp";
+import Logo from "../assets/Logo.webp";
 import {
   FaLinkedin,
   FaGithub,
@@ -9,18 +9,18 @@ import {
 const Navbar = () => {
   return (
     <nav className="mb-8 md:mb-20 flex items-center justify-between py-4 md:py-6">
-      {/* <div className="flex-shrink-0 items-center">
+      <div className="flex-shrink-0 items-center">
         <img src={Logo} alt="Logo" className="w-24 md:w-32" />
-      </div> */}
+      </div>
       <div className="flex m-4 items-center justify-center md:justify-end gap-4 text-xl">
         <div className="gap-2 flex">
-          {/*<a
+          <a
             href="https://www.linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-inherit">
             <FaLinkedin />
-          </a>*/}
+          </a>
           <a
             href="https://github.com/SilentCraftsman"
             target="_blank"
@@ -28,7 +28,7 @@ const Navbar = () => {
             className="text-inherit">
             <FaGithub />
           </a>
-          {/*<a
+          <a
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -41,7 +41,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="text-inherit">
             <FaInstagram />
-          </a>*/}
+          </a>
         </div>
       </div>
     </nav>
